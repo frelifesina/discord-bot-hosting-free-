@@ -29,6 +29,8 @@ async def on_message(message):
         await message.author.send(msg)
     if message.content.startswith("/너의??"):
         await message.channel.send("이름은")
-
-client.run("ODgxMzY0NTE3OTE1ODc3Mzk4.YSrwrA.Y0W2m5rHkqr1mr9PlpyUWBSBKR8")
+        
+        
+access_token = os.environ["BOT_TTOKEN"]
+client.run(access_token)
 
